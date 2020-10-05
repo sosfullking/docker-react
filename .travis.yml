@@ -6,4 +6,4 @@ befor_install:
     - docker build -t javad/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run javad/docker-react npm run test -- --coverage
+    - docker run javad/docker-react npm run test -- --coverage --forceExit
